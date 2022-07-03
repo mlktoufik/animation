@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    font-family:Baloo;
+    width: 100%;
+    height: 100%;
+}
+.titre{
+    width: 100%;
+    
+    position: absolute;
+    font-family: Baloo;
+   
+
+}
+.container{
+   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.container{
+    
+    background: #fff;
+    width: 500px; 
+    
+    padding: 25px;
+    box-shadow:0 0 12px rgba(0,0,0,0.5);
+
+}
+.container .text{
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+}
+.container form{
+    margin-top: -20px;
+
+}
+.container form .data {
+    height: 30px;
+    width: 100%;
+    max-width: 100px 0;
+}
+.container form .data2 {
+    height: 60px;
+    width: 30%;
+    max-width: 100px 0;
+}
+form .data label, form .data2 label{
+    
+    font-style: 18px;
+}
+form .data input{
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    font-style: 14px;
+    border: 1px solid lightgrey;
+}
+form .data input:focus{
+     border-color: lightgrey;
+     border-bottom-width: 2px;
+}
+
+
+
+form .btn{
+    margin: 40px 0;
+    height: 45px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+form .btn .inner{
+
+    height: 100%;
+    width: 300%;
+    
+    position: absolute;
+    left: -100%;
+    z-index: -1;
+    background: linear-gradient(to right,#ffc2ffa0 ,#753a88, #ffc2ffa0);
+    transition:all 0.4s ;
+}
+form .btn:hover .inner {
+    left: 0;
+
+}
+form .btn button{
+    height: 100%;
+    width: 100%;
+    background: none;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+
+.titre h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    margin-top: 9%;
+
+
+}
+.show-btn{
+    background: #fff;
+    padding: 10px 20px;
+    font-style: 20px;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+    font-weight: 550;
+    color:#F0F8FF;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+    
+    background: linear-gradient(to right,#ffc2ffa0 ,#753a88, #ffc2ffa0);
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+
+
+
+    
+    
+
+
+}
+.show-btn{
+    position: absolute;
+    margin-top: 21%;
+   left: 37%;
+   right: 37%;
+    
+}
+.boxe2 {
+    
+    position: absolute;
+    margin-top: 28% ;
+    
+    left :41%;
+    
+
+}
+#c1{
+    opacity: 0;
+    animation-delay: 3s;
+    animation-name: show;
+    animation-duration: 5s;
+    animation-timing-function:step-start;
+    animation-fill-mode: alternate;
+
+}
+#cr2{
+    opacity: 0;
+    animation-delay: 4s;
+    animation-name: show;
+    animation-duration: 4s;
+    animation-timing-function:step-start;
+    animation-fill-mode: alternate;
+    
+
+}
+
+#table{position: absolute;
+
+        opacity: 0;
+        animation-delay: 0s;
+        animation-name: show;
+        animation-duration: 8s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: alternate;
+        
+}
+#box{
+    opacity: 0;
+    animation-delay: 0s;
+    animation-name: show;
+           animation-duration: 8s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: alternate;
+       
+
+}
+#box3{
+    opacity: 0;
+    animation-delay: 7s;
+    animation-name: show1;
+    animation-delay: 8s;
+   
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: alternate;
+    transform-origin: center;
+    transform-box: fill-box;    
+    
+
+}
+
+#table2{
+    opacity: 0;
+    animation-name: wigle;
+    animation-delay: 8s;
+   
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+
+}
+
+
+
+.page{
+    background: linear-gradient(to left,#8942a8 , #ba382f);
+    width: 100%;
+    height: 100vh;
+
+}
+
+.animation {
+    background: linear-gradient(to left,#8942a8 , #ba382f);
+    width: 100%;
+    height: 100vh;
+
+}
+.box-area{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.box-area li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 20s linear infinite;
+    bottom: -150px;
+  
+    
+}
+.box-area li:nth-child(1){
+    left: 86%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+    
+
+}
+.box-area li:nth-child(2){
+    left: 7%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 1.5s;
+    animation-duration: 10s;
+
+}
+.box-area li:nth-child(3){
+    left: 70%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 5.5s;
+
+
+}
+.box-area li:nth-child(4){
+    left: 12%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 15s;
+
+
+}
+.box-area li:nth-child(5){
+    left: 65%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 0s;
+    
+
+
+}
+.box-area li:nth-child(6){
+    left: 31%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3.5s;
+
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-800px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+
+@keyframes show {
+    
+    to {
+        opacity: 1;
+    }
+}
+@keyframes show1 {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes wigle {
+    
+    0% {
+        
+            opacity: 1;
+        transform:  rotateZ(-14deg);
+    }
+    50% {
+        opacity: 1;
+        transform:  rotateZ(14deg);
+    }
+    100% {
+        opacity: 1;
+        transform:  rotateZ(-14deg);
+    }
+   
+}

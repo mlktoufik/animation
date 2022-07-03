@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="fr"> 
+    <head> 
+        <meta charset="utf-8">
+        <title>Ajouter Produit :</title> 
+        <link rel="stylesheet" href="style.css">
+        
+    </head> 
+    <body>
+        <div class="page"></div>
+        <div class="container">
+            <div class="text">Entrer Votre Produit</div>
+            <br>
+            <form action="#">
+               
+    
+                <div class="data">
+                    <label>Nom de Produit</label>
+                    <input type="text" required>
+                </div>
+                <br>
+                <div class="data">
+
+                <label>Marque :</label>
+                    
+                <select class="data" name="marque">
+                
+                <option value="dior">Dior</option>
+                <option value="channel">Channel</option>
+                <option value="armani">Giorgio Armani</option>
+                <option value="ysl">Yves Saint Laurent</option>
+                <option value="jpg">Jean Paul Gautier</option>
+                <option value="sephora">Sephora</option>
+                <option value="mac">Mac</option>
+                <option value="bourjois">Bourjois</option>
+                <option value="maybelline">Maybelline</option>
+                <option value="kylie">Kylie Jenner</option>
+                <option value="huda">Huda Beauty</option>
+                <option value="nocibe">Nocibé</option>
+                    </select>
+                  </div>
+                <br>
+                <div class="data">
+    
+                    <label for="msg">Prix :</label>
+                     <input type="range" id="prix" name="prix" 
+                            min="0" max="100"
+                           value="90" step="10">
+                   
+                   </div>
+                   <br>
+                   <div class="data">
+                    <label for="couleur">Couleur :</label>
+                    <input type="color" name="couleur"/> 
+                    </div>
+                   
+                   <br>
+                   
+                <div class="data">
+                    <label>Quantiter</label>
+                    <input type="number" required>
+                    
+                </div>
+                <br>
+                <div class="data">
+                                        <label>Date de péremption :</label>
+                   <input type="date" name="dateexp"/> 
+                   </div>
+                   <br>
+                   <div class="data">
+                    <label>Description :</label>
+                    <input type="text" required>	
+                   </div>
+                <br>
+                <div class="data2">
+                    <label>Image :</label>
+                   <input type="file" name="image" accept="images/*" /> 
+                
+                    <label>Notice :</label>
+                   <input type="file" name="notice" accept="pdf/*" /> 
+                   </div>
+                   <br>
+                   <div>
+                <div class="btn">
+                    <div class="inner"></div>
+                    <button type="button">Save</button>
+                    
+                </div>
+    
+            </form>
+        </div>
+    </body>
+</html>
